@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>work with jquary</title>
+<style>
+    div{width: 300px;
+    height: 200px;
+border: 2px solid black;
+float: left; margin: 1%;}
+div:hover{ box-shadow: 10px 10px 15px black;}
+    .green{background-color: lawngreen;
+    }
+    .blue{background-color: blue;}
+</style>
+</head>
+<body>
+    <div class="green"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="blue"></div>
+    <button id="hg">hide green</button>
+    <button id="hb">hide blue</button>
+    <button id="hi">hide both</button>
+    <button id="sa">show all</button>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+$(document).ready(function(){
+    $("#hg").click(function(){
+        $(".green").hide();
+    })
+    $("#hb").click(function(){
+        $(".blue").hide();
+    })
+    $("#hi").click(function(){
+        $("div").hide();
+    })
+    $("#sa").click(function(){
+        $("div").show();
+    })
+})
+
+    </script>
+</body>
+</html>
