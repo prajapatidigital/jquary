@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+</head>
+<body>
+    <div class="load">
+        <div class="cricle"></div>
+    </div>
+    <div class="main">
+        <div class="menu"><i class="lni lni-grid-alt"></i></div>
+        <div class="tab">
+            <div class="click1 bg1"><h2>tab1</h2></div>
+            <div class="click2 bg2"><h2>tab2</h2></div>
+            <div class="click3 bg3"><h2>tab3</h2></div>
+            <div class="click4 bg4"><h2>tab4</h2></div>
+        </div>
+        <div class="tab1 ">
+            <div class="nev bg1 nev1"><h1>What is HTML?</h1></div>
+            <div class="banner bg3 banner1"><h3>`HTML stands for Hyper Text Markup Language
+              HTML is the standard markup language for creating Web pages
+              HTML describes the structure of a Web page
+              HTML consists of a series of elements
+              HTML elements tell the browser how to display the content
+              HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+              `</h3></div>
+        </div>
+        <div class="tab2 ">
+            <div class="nev bg3 nev2"><h1>What is an HTML Element?</h1></div>
+            <div class="banner bg5 banner2"><h3>`An HTML element is defined by a start tag, some content, and an end tag:
+
+              <tagname>Content goes here...</tagname>
+              The HTML element is everything from the start tag to the end tag:
+              
+              <h1>My First Heading</h1>
+              <p>My first paragraph.</p>`</h3></div>
+        </div>
+        <div class="tab3 ">
+            <div class="nev bg4 nev3"><h1>What is CSS?</h1></div>
+            <div class="banner bg1 banner3"><h3>`Cascading Style Sheets (CSS) is used to format the layout of a webpage.
+
+              With CSS, you can control the color, font, the size of text, the spacing between elements,
+               how elements are positioned and laid out, what background images or background colors are to be used,
+                different displays for different devices and screen sizes, and much more!`</h3></div>
+        </div>
+        <div class="tab4 ">
+            <div class="nev bg6 nev4"><h1>What is Python?</h1></div>
+            <div class="banner bg2 banner4"><h3>`Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+
+              It is used for:
+              
+              web development (server-side),
+              software development,
+              mathematics,
+              system scripting.`</h3></div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+$(document).ready(function(){
+    $(".load").fadeOut(2000);
+
+    $(".click1").click(function(){
+    $(".tab1").toggle();$(".tab2").hide();$(".tab3").hide();$(".tab4").hide();
+  });
+  $(".click2").click(function(){
+    $(".tab2").toggle();$(".tab1").hide();$(".tab3").hide();$(".tab4").hide();
+  });
+  $(".click3").click(function(){
+    $(".tab3").toggle();$(".tab2").hide();$(".tab1").hide();$(".tab4").hide();
+  });
+  $(".click4").click(function(){
+    $(".tab4").toggle();$(".tab2").hide();$(".tab3").hide();$(".tab1").hide();
+  });
+  $(".menu").click(function(){
+    $(".tab").slideToggle("slow");
+  });
+  $(".nev1").click(function(){
+    $(".banner1").slideToggle("slow");
+  });
+  $(".nev2").click(function(){
+    $(".banner2").slideToggle("slow");
+  });
+  $(".nev3").click(function(){
+    $(".banner3").slideToggle("slow");
+  });
+  $(".nev4").click(function(){
+    $(".banner4").slideToggle("slow");
+  });
+})
+
+
+</script>
+</body>
+</html>
